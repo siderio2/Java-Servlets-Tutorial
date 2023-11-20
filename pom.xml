@@ -56,5 +56,10 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/webapp/css</directory>
+            </resource>
+        </resources>
     </build>
 </project>

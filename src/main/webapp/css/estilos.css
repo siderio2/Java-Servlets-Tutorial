@@ -1,0 +1,43 @@
+body {
+    background-color: #b0c4de;
+}
+
+h1 {
+    text-align: center;
+}
+
+.greetings {
+    padding: 25% 0 0;
+}
+
+.form-container, .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-container {
+    margin-top: 20%;
+}
+
+input[name="nombre"] {
+    margin: 3px 0 15px;
+}
+
+.btn-submit {
+    padding: 4px 11px;
+    border-radius: 10%;
+    background-color: lightgrey;
+}
+
+.btn-submit:hover {
+    padding: 4px 11px;
+    cursor: pointer;
+    border-radius: 10%;
+    background-color: darkgrey;
+    box-shadow: 5px 6px 3px #888888;
+}
+
+.backlink {
+    margin: 6%;
+}

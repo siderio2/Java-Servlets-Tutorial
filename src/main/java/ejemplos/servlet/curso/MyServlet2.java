@@ -17,11 +17,21 @@ public class MyServlet2 extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 
+		// leemos el valor del nombre enviado a través de la URL
+		String nombre = request.getParameter("nombre");
+
 		// send HTML page to client
 		out.println("<html>");
-		out.println("<head><title>Ejemplo HTML desde Servlet</title></head>");
+		out.println("<head><title>Ejemplo HTML desde Servlet</title><link rel=\"stylesheet\" href=\"css/estilos.css\"></head>");
 		out.println("<body>");
-		out.println("<h1>Bienvenido!!</h1>");
+		out.println("<div class=\"main-container\">");
+		// Modificamos la salida para añadir el saludo personalizado
+		out.println("<h1>Bienvenid@, " + nombre + "!!</h1>");
+		out.println("</div");
+
+		out.println("<p><a class=\"backlink\" href=\"/myServlet\">Volver</a></p>");
+
+		out.println("</body></html>");
 	}
 
 }
